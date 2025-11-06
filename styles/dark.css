@@ -21,3 +21,16 @@
 
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-image: var(--bg-dark-img);
+    --bg-color: var(--bg-dark-clr);
+    --accent-color: var(--theme-dark-color);
+    --focus-color: var(--focus-dark-color);
+    --title-color: var(--theme-dark-color);
+    --card-text: var(--card-dark-text);
+    --shadow-color: var(--theme-dark-color);
+    --button-hover: var(--button-dark-hover);
+    --decor-color: var(--decor-dark-color);
+  }
+}

@@ -3,7 +3,6 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 :root.theme-light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -25,5 +24,27 @@
 
   .header__rec:after {
     display: none;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: var(--bg-light-img);
+    --bg-color: var(--bg-light-clr);
+    --accent-color: var(--theme-light-color);
+    --card-text: var(--accent-color);
+    --focus-color: var(--focus-light-color);
+    --shadow-color :var(--light-shadow-color);
+    --title-color: var(--light-shadow-color);
+    --button-hover: var(--button-light-hover);
+    --decor-color: var(--decor-light-color);
+    
+    .header__rec {
+      display: none;
+    }
+
+    .header__rec:after {
+      display: none;
+    }
   }
 }
