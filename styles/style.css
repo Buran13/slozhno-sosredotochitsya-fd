@@ -42,7 +42,7 @@
   font-size: 18px;
   line-height: 18%;
   background-color: transparent;
-  border-style: none;
+  border: 1px solid transparent;
   height: 26px;
   width: 70px;
 }
@@ -64,7 +64,8 @@
 .header__rec {
   position: absolute;
   display: flex;
-  justify-self: flex-end;
+  top: 0;
+  right: 0;
   font-size: 18px;
   padding-right: 29px;
   padding-top: 22px;
@@ -109,7 +110,7 @@
   line-height: 23.4px;
   font-weight: 700;
   font-size: 18px;
-  color: rgba(0, 0, 40, 1);
+  color: var(--decor-color);
 }
 
 .main {
@@ -262,7 +263,6 @@ a:focus-visible {
 
 @media (width <= 768px) {
   .header {
-    height: 100vh;
     min-height: 1024px;
   }
 
@@ -272,7 +272,7 @@ a:focus-visible {
 
   .header__theme-menu {
     align-self: center;
-  justify-self: flex-end;
+    justify-self: flex-end;
   }
 
   .header__theme-menu-list {
@@ -289,15 +289,17 @@ a:focus-visible {
   }
 
   .footer {
-    height: 100vh;
     min-height: 1024px;
   }
 }
 
-@media (width <= 376px) {
+@media (width <= 450px) {
   .header {
-    height: 100vh;
     min-height: 668px;
+  }
+
+  .header__theme-menu-list {
+    margin-block-end: 15px;
   }
 
   .header__theme-menu-item {
@@ -306,6 +308,7 @@ a:focus-visible {
 
   .header__title {
     min-inline-size: calc(100% - 20px);
+    margin-block-start: 10px;
     margin-inline: 10px;
   }
 
@@ -365,7 +368,6 @@ a:focus-visible {
   }
 
   .footer {
-    height: 100vh;
     min-height: 668px;
   }
 }

@@ -16,7 +16,8 @@
   --focus-color: var(--focus-light-color);
   --shadow-color :var(--light-shadow-color);
   --title-color: var(--light-shadow-color);
-  --button-hover: var(--button-light-hover)
+  --button-hover: var(--button-light-hover);
+  --decor-color: var(--decor-light-color);
   
   .header__rec {
     display: none;

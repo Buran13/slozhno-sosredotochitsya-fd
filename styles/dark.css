@@ -17,6 +17,7 @@
   --card-text: var(--card-dark-text);
   --shadow-color: var(--theme-dark-color);
   --button-hover: var(--button-dark-hover);
+  --decor-color: var(--decor-dark-color);
 
 }
 
