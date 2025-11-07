@@ -13,18 +13,12 @@
   --accent-color: var(--theme-light-color);
   --card-text: var(--accent-color);
   --focus-color: var(--focus-light-color);
-  --shadow-color :var(--light-shadow-color);
+  --shadow-color: var(--light-shadow-color);
   --title-color: var(--light-shadow-color);
   --button-hover: var(--button-light-hover);
   --decor-color: var(--decor-light-color);
-  
-  .header__rec {
-    display: none;
-  }
-
-  .header__rec:after {
-    display: none;
-  }
+  --rec-visibility: var(--rec-visibility-none);
+  --dot-visibility: var(--dot-visibility-none);
 }
 
 @media (prefers-color-scheme: light) {
@@ -34,17 +28,11 @@
     --accent-color: var(--theme-light-color);
     --card-text: var(--accent-color);
     --focus-color: var(--focus-light-color);
-    --shadow-color :var(--light-shadow-color);
+    --shadow-color: var(--light-shadow-color);
     --title-color: var(--light-shadow-color);
     --button-hover: var(--button-light-hover);
     --decor-color: var(--decor-light-color);
-    
-    .header__rec {
-      display: none;
-    }
-
-    .header__rec:after {
-      display: none;
-    }
+    --rec-visibility: var(--rec-visibility-none);
+    --dot-visibility: var(--dot-visibility-none);
   }
 }

@@ -15,8 +15,23 @@
   --theme-light-color: rgba(53, 52, 48, 1);
   --focus-light-color: rgba(255, 194, 230, 1);
   --light-shadow-color: rgba(255, 141, 203, 1);
-  --card-dark-text: rgba(241, 178, 206, 1); 
+  --card-dark-text: rgba(241, 178, 206, 1);
   --decor-dark-color: rgba(0, 0, 40, 1);
   --decor-light-color: rgba(53, 52, 48, 1);
-}
+  --rec-visibility-none: none;
+  --dot-visibility-none: none;
+  --rec-visibility-yes: flex;
+  --dot-visibility-yes: block;
 
+  --bg-image: var(--bg-dark-img);
+  --bg-color: var(--bg-dark-clr);
+  --accent-color: var(--theme-dark-color);
+  --focus-color: var(--focus-dark-color);
+  --title-color: var(--theme-dark-color);
+  --card-text: var(--card-dark-text);
+  --shadow-color: var(--theme-dark-color);
+  --button-hover: var(--button-dark-hover);
+  --decor-color: var(--decor-dark-color);
+  --rec-visibility: var(--rec-visibility-yes);
+  --dot-visibility: var(--dot-visibility-yes);
+}

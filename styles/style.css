@@ -2,7 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
   background-image: var(--bg-image);
   background-color: var(--bg-color);
   background-size: cover;
@@ -22,7 +22,7 @@
 .header__theme-menu {
   align-self: flex-start;
   justify-self: center;
-  margin-top: 21px;
+  margin-top: 19px;
   color: var(--accent-color);
 }
 
@@ -37,7 +37,7 @@
 }
 
 .header__theme-menu-button {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
   text-transform: lowercase;
   font-size: 18px;
   line-height: 18%;
@@ -52,7 +52,6 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border: none;
   outline: none;
   border-bottom: 1px solid var(--accent-color);
 }
@@ -63,7 +62,7 @@
 
 .header__rec {
   position: absolute;
-  display: flex;
+  display: var(--rec-visibility);
   top: 0;
   right: 0;
   font-size: 18px;
@@ -73,9 +72,9 @@
 }
 
 .header__rec::after {
-  content: '';
+  content: "";
   align-self: center;
-  display: block;
+  display: var(--dot-visibility);
   border-radius: 50%;
   background-color: var(--theme-dark-color);
   height: 9px;
@@ -156,11 +155,14 @@
 .main__middle-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: min-content auto;
 }
 
 .card-middle-section {
+  grid-column: 1 / 4;
   grid-row-start: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .subtitle {
@@ -223,7 +225,7 @@
 }
 
 .decorated-zone::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 25px;
   width: 25px;
@@ -235,7 +237,7 @@
 }
 
 .decorated-zone::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 25px;
   width: 25px;
@@ -273,6 +275,7 @@ a:focus-visible {
   .header__theme-menu {
     align-self: center;
     justify-self: flex-end;
+    margin-block-end: 5px;
   }
 
   .header__theme-menu-list {
@@ -280,8 +283,8 @@ a:focus-visible {
   }
 
   .card-middle-section {
-    grid-row: auto;
-    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
   }
 
   .card-section {
@@ -326,6 +329,7 @@ a:focus-visible {
   }
 
   .main-title {
+    margin-inline-start: 10px;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
